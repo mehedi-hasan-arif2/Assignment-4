@@ -7,7 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<script src="app.js"></script>
+
+    <main class="dashboard-wrapper">
+        <header class="header-content">
+            <h1 class="page-title">Job Application Tracker</h1>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <p>Total</p>
+                    <h2 id="total-stat">0</h2>
+                </div>
+                <div class="stat-item">
+                    <p>Interview</p>
+                    <h2 id="interview-stat" class="color-green">0</h2>
+                </div>
+                <div class="stat-item">
+                    <p>Rejected</p>
+                    <h2 id="rejected-stat" class="color-red">0</h2>
+                </div>
+            </div>
+        </header>
+
+        <section class="job-board">
+            <div class="board-header">
+                <h3>Available Jobs</h3>
+                <span id="jobs-badge" class="badge-text">0 jobs</span>
+            </div>
+
+            <div class="tab-controls">
+                <button id="tab-all" class="tab-link active" onclick="switchTab('all')">All</button>
+                <button id="tab-interview" class="tab-link" onclick="switchTab('interview')">Interview</button>
+                <button id="tab-rejected" class="tab-link" onclick="switchTab('rejected')">Rejected</button>
+            </div>
+
+            <div id="cards-list" class="cards-grid">
+                </div>
+
+            <div id="no-data-view" class="empty-illustration">
+                <img src="assets/jobs.png" alt="No data icon">
+                <h4>No jobs Available</h4>
+                <p>Check back soon for new job opportunities</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
