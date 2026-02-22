@@ -1,4 +1,4 @@
-# Job Application Tracker - Assignment 4
+# Assignment 4 - Job Application Tracker 
 
 ### Answers to Questions
 
@@ -9,12 +9,15 @@
 - `querySelectorAll`: Selects all matching elements and returns them as a static NodeList.
 
 **2. How to create and insert a new element into the DOM?**
+
 First, we create an element using `document.createElement('tagName')`. Then, we can add content using `innerText` or `innerHTML`. Finally, we insert it into the DOM using `appendChild()` (to add it as the last child) or `insertBefore()` (to place it before a specific element).
 
 **3. What is Event Bubbling?**
+
 Event Bubbling is a way of event propagation in the HTML DOM. When an event happens on an element (like a button click), the event first runs on the button, then bubbles up to its parent, then to the grandparent, and so on, until it reaches the `window` object.
 
 **4. What is Event Delegation and why is it useful?**
+
 Event Delegation is a technique where we add a single event listener to a parent element instead of adding multiple listeners to every child. It is useful because it saves memory and works perfectly for dynamic elements that are added to the UI later.
 
 **5. difference between preventDefault() and stopPropagation()?**
