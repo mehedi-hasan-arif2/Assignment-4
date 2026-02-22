@@ -222,3 +222,41 @@ body {
     color: #fff;
 }
 
+
+/* Start of Responsive Design */
+
+/* Desktop & Laptops */
+@media screen and (min-width: 992px) {
+    .dashboard-wrapper {
+        max-width: 800px; 
+        margin: 0 auto;  
+    }
+}
+
+/* Tablet & Mobile Devices*/
+@media screen and (max-width: 992px) {
+    body {
+        padding: 20px 15px; 
+    }
+
+    .dashboard-wrapper {
+        max-width: 95%; 
+        margin: 0 auto;
+    }
+
+    .stats-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .job-card {
+        padding: 20px;
+    }
+
+    .action-box {
+        display: flex;
+        flex-direction: row; 
+        gap: 10px;
+    }
+}
