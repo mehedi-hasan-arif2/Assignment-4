@@ -1,4 +1,4 @@
-/* Start of Global Setup */
+/* Global Setup */
 * {
     margin: 0;
     padding: 0;
@@ -146,9 +146,11 @@ body {
 .empty-illustration {
     text-align: center;
     padding: 70px 0;
+    display: none;
 }
 
 .empty-illustration img {
      width: 60px; 
      margin-bottom: 15px;
 }
+
