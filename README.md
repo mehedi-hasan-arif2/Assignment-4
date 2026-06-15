@@ -1,4 +1,4 @@
-# Assignment 4 - Job Application Tracker 
+# Job Application Tracker 
 
 ### Answers to Questions
 
